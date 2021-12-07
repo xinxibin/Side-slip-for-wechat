@@ -1,0 +1,15 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <view class="content-view">
+    <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
+      <view bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd"
+        class="log-item {{modalName=='move-box-' + index ?'move-cur':''}}" data-target="move-box-{{index}}">
+        <view class="move" >
+          <view class="bg-orange" bindtap="batchCollectCartSku" data-sku="{{sku}}">收藏</view>
+          <view class="bg-red" bindtap="batchDeleteCartSku" data-sku="{{sku}}">删除</view>
+        </view>
+        <view class="log-title">{{log.date}}</view>
+      </view>
+    </block>
+  </view>
+</view>

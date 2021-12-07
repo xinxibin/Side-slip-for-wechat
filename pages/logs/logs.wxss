@@ -1,0 +1,57 @@
+.content-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+}
+.log-item {
+  position: relative;
+  color: #FFF;
+  margin: 16rpx 0;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: rgb(32, 93, 254);
+  border-radius: 12rpx;
+  transition: all 0.45s ease-in-out 0s;
+  transform: translateX(0rpx);
+}
+.log-title {
+  color: #FFF;
+  font-size: 28rpx;
+  font-weight: 500;
+  padding: 0 30rpx;
+}
+.move {
+  position: absolute;
+  right: 0;
+  display: flex;
+  width: 260rpx;
+  height: 100%;
+  transform: translateX(100%);
+}
+.move-cur {
+  transform: translateX(-260rpx);
+}
+.bg-orange {
+  width: 180rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #333;
+  font-size: 28rpx;
+  background-color: #EDEDED;
+}
+.bg-red {
+  width: 180rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #FFF;
+  font-size: 28rpx;
+  background-color:red;
+}
